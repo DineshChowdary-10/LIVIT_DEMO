@@ -12,13 +12,19 @@ public class PG {
 	private BigDecimal monthlyRent;
 	private Integer availableBeds;
 	private Integer totalBeds;
+	private String sharingType;
 	private BigDecimal rating;
 	private BigDecimal distance;
 	private HashSet<String> facilities;
 	
+	public PG()
+	{
+		
+	}
+	
 	
 	public PG(Integer pgId, String name, String location, Integer ownerId, BigDecimal monthlyRent,
-			Integer availableBeds, Integer totalBeds, BigDecimal rating, BigDecimal distance,
+			Integer availableBeds, Integer totalBeds, String sharingType, BigDecimal rating, BigDecimal distance,
 			HashSet<String> facilities) {
 		super();
 		this.pgId = pgId;
@@ -28,6 +34,7 @@ public class PG {
 		this.monthlyRent = monthlyRent;
 		this.availableBeds = availableBeds;
 		this.totalBeds = totalBeds;
+		this.sharingType = sharingType;
 		this.rating = rating;
 		this.distance = distance;
 		this.facilities = facilities;
@@ -104,6 +111,16 @@ public class PG {
 	}
 
 
+	public String getSharingType() {
+		return sharingType;
+	}
+
+
+	public void setSharingType(String sharingType) {
+		this.sharingType = sharingType;
+	}
+
+
 	public BigDecimal getRating() {
 		return rating;
 	}
@@ -136,6 +153,4 @@ public class PG {
 	
 	
 	
-	
-
 }

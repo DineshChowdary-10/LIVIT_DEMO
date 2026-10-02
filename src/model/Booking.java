@@ -6,16 +6,20 @@ public class Booking {
 	
 	private Integer bookingId;
 	private Integer studentId;
-	private Integer piId;
+	private Integer pgId;
 	private LocalDateTime bookingDate;
 	private String status;
 	
+	public Booking()
+	{
+		
+	}
 	
-	public Booking(Integer bookingId, Integer studentId, Integer piId, LocalDateTime bookingDate, String status) {
+	public Booking(Integer bookingId, Integer studentId, Integer pgId, LocalDateTime bookingDate, String status) {
 		super();
 		this.bookingId = bookingId;
 		this.studentId = studentId;
-		this.piId = piId;
+		this.pgId = pgId;
 		this.bookingDate = bookingDate;
 		this.status = status;
 	}
@@ -41,13 +45,13 @@ public class Booking {
 	}
 
 
-	public Integer getPiId() {
-		return piId;
+	public Integer getPgId() {
+		return pgId;
 	}
 
 
-	public void setPiId(Integer piId) {
-		this.piId = piId;
+	public void setPgId(Integer pgId) {
+		this.pgId = pgId;
 	}
 
 
@@ -69,6 +73,8 @@ public class Booking {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	
+	
 	
 	
 	

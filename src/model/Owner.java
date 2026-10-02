@@ -8,6 +8,10 @@ public class Owner {
 	private String email;
 	private String password;
 	
+	public Owner()
+	{
+		
+	}
 	
 	public Owner(Integer ownerId, String name, String phoneNumber, String email, String password) {
 		super();
@@ -68,7 +72,7 @@ public class Owner {
 		this.password = password;
 	}
 	
-	
+		
 	
 	
 	
